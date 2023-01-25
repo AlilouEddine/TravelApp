@@ -2,9 +2,9 @@ import React from 'react';
 import { View,Text,SafeAreaView} from 'react-native';
 import {styles} from './styles'
 
-const Title = (props) =>{
+const Title = ({name,style}) =>{
     return (
-       <Text style={styles.title}>{props.name}</Text>
+       <Text style={[styles.title,style]}>{name}</Text>
     );
 }
 
